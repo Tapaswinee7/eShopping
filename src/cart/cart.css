@@ -1,0 +1,325 @@
+.header {
+    width: 100%;
+    /* Makes the header span the full width of the page */
+    height: 20px;
+    /* Sets the height of the header */
+    background-color: #282c34;
+    /* Sets a dark background color for the header */
+    padding: 20px;
+    /* Adds padding inside the header for spacing */
+    color: white;
+    /* Sets the text color to white */
+    display: flex;
+    /* Uses flexbox layout for the header content */
+    justify-content: space-between;
+    /* Distributes space between the header items, pushing them to the sides */
+    align-items: center;
+    /* Vertically centers the header items */
+}
+
+.category-header {
+    width: 100%;
+    /* Makes the category header span the full width of the container */
+    background-color: #f8f9fa;
+    /* Sets a light background color */
+    padding: 10px;
+    /* Adds padding inside the category header */
+    text-align: center;
+    /* Centers the text horizontally */
+    border: 1px solid #544f4f;
+    /* Adds a border around the category header */
+    /* margin-bottom: 10px; */
+    /* Commented out: would add space below the category header */
+}
+
+.title-container {
+    flex: 1;
+    /* Allows the title container to take up the remaining space in the header */
+    text-align: center;
+    /* Centers the title text horizontally */
+}
+
+.category-header h2 {
+    margin: 0;
+    /* Removes default margin around the h2 element */
+    font-size: 24px;
+    /* Sets the font size of the h2 element */
+    color: #322f2f;
+    /* Sets the text color for the h2 element */
+}
+
+.cart-items {
+    display: flex;
+    /* Uses flexbox to align the cart items */
+    align-items: center;
+    /* Vertically centers the cart items */
+    margin-left: auto;
+    /* Pushes the cart items to the right */
+}
+
+.cart {
+    margin-left: 10px;
+    /* Adds space between the cart icon and the text */
+}
+
+.cart-count {
+    display: inline-block;
+    /* Allows for setting width and height */
+    background-color: white;
+    /* Sets a white background for the cart count */
+    color: black;
+    /* Sets the text color to black */
+    border-radius: 50%;
+    /* Makes the cart count element a circle */
+    font-size: 10px;
+    /* Sets the font size of the cart count */
+    font-weight: bold;
+    /* Makes the cart count text bold */
+    width: 20px;
+    /* Sets a fixed width for the cart count circle */
+    height: 20px;
+    /* Sets a fixed height for the cart count circle */
+    text-align: center;
+    /* Centers the text horizontally */
+    line-height: 20px;
+    /* Vertically centers the text by matching the line-height to the height */
+    margin-left: 5px;
+    /* Adds a small space between the cart count and the cart text */
+}
+
+.accordion {
+    width: 200px;
+    /* Sets a fixed width for the accordion */
+}
+
+.accordion-item button {
+    width: 100%;
+    /* Makes the button span the full width of the accordion */
+    padding: 10px;
+    /* Adds padding inside the button */
+    text-align: left;
+    /* Aligns the button text to the left */
+    border: none;
+    /* Removes the default button border */
+    background-color: #f0f0f0;
+    /* Sets a light background color for the button */
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the button */
+}
+
+.accordion {
+    border: 1px solid #625f5f;
+    /* Adds a border around the accordion */
+    border-radius: 2px;
+    /* Slightly rounds the corners of the accordion */
+    max-width: 300px;
+    /* Sets a maximum width for the accordion */
+}
+
+.accordion-item {
+    margin: 0;
+    /* Removes default margin */
+    padding: 0;
+    /* Removes default padding */
+}
+
+.accordion-category {
+    background-color: #f5f5f5;
+    /* Sets a light background color for the accordion category */
+    border: none;
+    /* Removes the border */
+    padding: 10px;
+    /* Adds padding inside the accordion category */
+    width: 100%;
+    /* Makes the accordion category span the full width */
+    text-align: left;
+    /* Aligns the text to the left */
+    font-size: 16px;
+    /* Sets the font size for the category text */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+    outline: none;
+    /* Removes the outline that appears on focus */
+    display: flex;
+    /* Uses flexbox to arrange content inside the category */
+    justify-content: space-between;
+    /* Places items at opposite ends */
+    align-items: center;
+    /* Vertically centers the items */
+    position: relative;
+    /* Positions child elements relative to this container */
+}
+
+.accordion-category:after {
+    content: '';
+    /* Adds an empty content element */
+    position: absolute;
+    /* Positions the pseudo-element absolutely within the category */
+    bottom: 0;
+    /* Aligns the pseudo-element to the bottom */
+    left: 0;
+    /* Aligns the pseudo-element to the left */
+    width: 100%;
+    /* Makes the pseudo-element span the full width */
+    height: 3px;
+    /* Sets the height of the pseudo-element */
+    background-color: white;
+    /* Sets the background color (used as a border) */
+}
+
+.accordion-category.expanded {
+    background-color: #7bb4f0;
+    /* Changes the background color when the category is expanded */
+}
+
+.accordion-content {
+    padding-left: 20px;
+    /* Adds padding to the left side of the accordion content */
+    background-color: #fff;
+    /* Sets the background color to white */
+}
+
+.accordion-subcategory {
+    padding: 5px 10px;
+    /* Adds padding inside the subcategory */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+    color: black;
+    /* Sets the text color to black */
+}
+
+.accordion-subcategory.highlight {
+    color: red;
+    /* Changes the text color to red when highlighted */
+}
+
+.accordion-items {
+    padding-left: 20px;
+    /* Adds padding to the left side of accordion items */
+}
+
+.accordion-item-detail {
+    padding: 5px 10px;
+    /* Adds padding inside the accordion item detail */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+    color: black;
+    /* Sets the text color to black */
+}
+
+.accordion-item-detail:hover {
+    background-color: #e9e9e9;
+    /* Changes the background color on hover */
+}
+
+.accordion-label {
+    flex: 1;
+    /* Allows the label to take up available space */
+    margin-left: 10px;
+    /* Adds margin to the left to create space for icons */
+}
+
+.icon-box {
+    width: 10px;
+    /* Sets a fixed width for the icon box */
+    height: 10px;
+    /* Sets a fixed height for the icon box */
+    border: 1px solid #373232;
+    /* Adds a border around the icon box */
+    display: inline-flex;
+    /* Uses flexbox to align content inside the icon box */
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    /* margin-right: 10px; */
+    /* Commented out: would add space to the right of the icon box */
+}
+
+.icon-box:last-child {
+    position: absolute;
+    /* Positions the icon box absolutely within its container */
+    right: 10px;
+    /* Moves the icon box 10px from the right edge */
+    /* Adjusts the position of the second icon */
+}
+
+.accordion-item-border {
+    position: absolute;
+    /* Positions the item border absolutely within its container */
+    bottom: 0;
+    /* Aligns the border to the bottom */
+    left: 0;
+    /* Aligns the border to the left */
+    width: 100%;
+    /* Makes the border span the full width */
+    height: 1px;
+    /* Sets the height of the border */
+    background-color: #7e1515;
+    /* Sets the border color */
+}
+
+.products {
+    flex: 1;
+    /* Allows the products container to take up remaining space */
+    display: flex;
+    /* Uses flexbox to arrange products */
+    flex-wrap: wrap;
+    /* Allows products to wrap to the next line */
+    gap: 10px;
+    /* Adds space between product tiles */
+}
+
+.product-tile {
+    border: 1px solid #5f5d5d;
+    /* Adds a border around the product tile */
+    padding: 20px;
+    /* Adds padding inside the product tile */
+    border-radius: 5px;
+    /* Rounds the corners of the product tile */
+    width: calc(33.333% - 7px);
+    /* Makes each product tile take up one-third of the row with a gap */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's width and height */
+    display: flex;
+    /* Uses flexbox to arrange content inside the product tile */
+    flex-direction: column;
+    /* Arranges content in a column (top to bottom) */
+    justify-content: space-between;
+    /* Distributes space between content, pushing some to the top and bottom */
+}
+
+.product-details {
+    flex-grow: 1;
+    /* Allows the product details to grow and take up available space */
+}
+
+.add-to-cart-button {
+    align-self: flex-end;
+    /* Aligns the button to the right side of the product tile */
+    margin-top: 10px;
+    /* Adds space between the details and the button */
+}
+
+.products {
+    margin-left: 20px;
+    /* Adds space to the left of the products container */
+}
+
+.add-to-cart-button {
+    margin-left: auto;
+    /* Pushes the button to the right */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+}
+
+.content {
+    display: flex;
+    /* Uses flexbox to arrange the main content */
+    width: 100%;
+    /* Makes the content container span the full width */
+    max-width: 1200px;
+    /* Sets a maximum width for the content container */
+    margin-top: 20px;
+    /* Adds space above the content container */
+}
