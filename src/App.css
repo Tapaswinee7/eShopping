@@ -36,24 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.header-contents {
-  height: 60px;
-  background-color: #0f1111;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0 16px;
-  gap: 24px;
-  max-width: 1200px;
-  margin-inline: auto; */
-}
-
-.cart-icon {
-    position: relative;
-}
